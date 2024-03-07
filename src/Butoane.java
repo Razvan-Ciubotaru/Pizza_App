@@ -3,12 +3,12 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Butoane extends JButton {
+public class Butoane  extends JButton  {
     private int counter;
     private JLabel counterLabel;
     private JButton butonIncrementare;
     private JButton butonDecrementare;
-    public Butoane(String title, int x, int y) {
+    public Butoane(String title,String prodName) {
 
 
         counter = 0;
@@ -22,8 +22,8 @@ public class Butoane extends JButton {
         butonIncrementare.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 counter++;
-                System.out.println("Aduna " + counter);
-                counterLabel.setText(" "+ counter);
+                System.out.println("Aduna " + counter+ " " + prodName);
+                counterLabel.setText(" "+ counter) ;
             }
         });
 
@@ -32,8 +32,8 @@ public class Butoane extends JButton {
             public void actionPerformed(ActionEvent e) {
                 if(counter > 0){
                     counter--;
-                    System.out.println("Scade " + counter);
-                    counterLabel.setText(" "+ counter);
+                    System.out.println("Scade " + counter+" " + prodName );
+                    counterLabel.setText(" "+ counter );
                 }
             }
         });

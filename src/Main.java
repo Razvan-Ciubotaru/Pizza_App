@@ -21,9 +21,9 @@ public class Main {
        // db.delete_id(conn,"employee",7);
       // db.read_data(conn, "employee");
 
-        Meniu meniu = new Meniu();
+       // Meniu meniu = new Meniu();
         //PizzaApp app = new PizzaApp();
-       // Aranjare aranjare = new Aranjare();
+        Aranjare aranjare = new Aranjare();
 
     }
 }

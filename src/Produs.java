@@ -4,10 +4,10 @@ import java.awt.*;
 public class Produs extends JLabel {
 private int counter;
 
-    public Produs(String title,String imagePath){
+    public Produs(String titleprod,String imagePath){
         counter=0;
         JLabel counterLabel = new JLabel("0");
-       this.setText(title);
+       this.setText(titleprod);
         this.setIcon(new ImageIcon(new ImageIcon(imagePath).getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT)));
         this.setHorizontalTextPosition(JLabel.CENTER);
         this.setVerticalTextPosition(JLabel.BOTTOM);
